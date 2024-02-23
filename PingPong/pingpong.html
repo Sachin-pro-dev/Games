@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ping Pong</title>
+    <style>
+      body {
+        background: #000;
+        color: white;
+      }
+      #gameContainer {
+        text-align: center;
+      }
+      #gameBoard {
+        box-shadow: 1px 1px 10px red;
+        border: 3px solid;
+      }
+      #scoreText {
+        font-family: "consolas";
+        font-size: 100px;
+      }
+      #resetBtn {
+        font-family: cursive;
+        font-size: 22px;
+        width: 100px;
+        height: 50px;
+        border: 4px solid;
+        border-radius: 15px;
+        cursor: pointer;
+        background: aqua;
+      }
+      #resetBtn:hover{
+        background: rgb(4, 147, 147);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gameContainer">
+      <canvas id="gameBoard" height="650" width="900"></canvas>
+      <div id="scoreText">0:0</div>
+      <button id="resetBtn">Reset</button>
+    </div>
+    <script src="pingpong.js"></script>
+  </body>
+</html>
